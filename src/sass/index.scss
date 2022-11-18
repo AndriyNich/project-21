@@ -1,3 +1,16 @@
 @import './common';
-// @import './example';
+@import './reset';
+@import './utils';
+
 @import './sections/header';
+@import './sections/hero';
+@import './sections/slider';
+@import './sections/sale';
+@import './sections/filter';
+@import './sections/all_accessories';
+@import './sections/take_order';
+@import './sections/contacts_us';
+@import './sections/contacts';
+@import './sections/blogs';
+@import './sections/blog_art';
+@import './sections/footer';
