@@ -299,4 +299,54 @@ body {
 
 .take-order {
   padding: 120px 40px 48px 40px;
+}
+
+.take-order__title,
+.take-order__product {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 1.18;
+  color: #ffffff;
+}
+
+.take-order__product {
+  width: 692px;
+  margin-bottom: 32px;
+}
+
+.take-order__prices {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.take-order__old-price {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1;
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+  color: #8d9289;
+}
+
+.take-order__new-price {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 1;
+  color: #86e543;
+}
+
+.take-order__order {
+  display: flex;
+  gap: 121px;
+  margin-top: 48px;
+}
+
+.take-order__variants {
+  display: flex;
+  gap: 24px;
 }/*# sourceMappingURL=index.css.map */
