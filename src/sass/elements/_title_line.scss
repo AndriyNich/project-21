@@ -1,51 +1,51 @@
-$bl-width: 100%;
-$bl-break-point: 192px;
-$bl-row-gap: 4px;
-$bl-heigth: 12px;
-$cnt-padding: 20px;
-
+:root {
+  --bl-width: 100%;
+  --bl-break-point: 192px;
+  --bl-row-gap: 4px;
+  --bl-heigth: 12px;
+  --cnt-padding: 17px;
+}
 @media screen and (min-width: 480px) {
-  $bl-width: 480px;
-  $bl-break-point: 192px;
-  $bl-row-gap: 4px;
-  $bl-heigth: 12px;
+  :root {
+    --bl-width: 480px;
+    --bl-break-point: 192px;
+    --bl-row-gap: 4px;
+    --bl-heigth: 12px;
+  }
 }
 
 @media screen and (min-width: 768px) {
-  $bl-width: 768px;
-  $bl-break-point: 325px;
-  $bl-row-gap: 8px;
-  $bl-heigth: 16px;
-  $cnt-padding: 40px;
+  :root {
+    --bl-width: 768px;
+    --bl-break-point: 325px;
+    --bl-row-gap: 8px;
+    --bl-heigth: 16px;
+    --cnt-padding: 40px;
+  }
 }
 
 @media screen and (min-width: 1280px) {
-  $bl-width: 1280px;
-  $bl-break-point: 473px;
-  $bl-row-gap: 8px;
-  $bl-heigth: 19px;
+  :root {
+    --bl-width: 1280px;
+    --bl-break-point: 473px;
+    --bl-row-gap: 8px;
+    --bl-heigth: 19px;
+  }
 }
-
-// .container {
-//   outline: 1px solid tomato;
-//   width: $bl-width;
-//   padding: 0 $cnt-padding;
-//   margin: 0 auto;
-// }
 
 .title-line {
   max-width: 100%;
-  width: $bl-width;
-  height: calc($bl-heigth + $bl-row-gap + 1px);
+  width: var(--bl-width);
+  height: calc(var(--bl-heigth) + var(--bl-row-gap) + 1px);
   background-color: #02393b;
   position: relative;
 }
 
 .title-line__1 {
   position: absolute;
-  width: $bl-break-point;
-  left: calc(-1 * $cnt-padding);
-  top: $bl-heigth;
+  width: var(--bl-break-point);
+  left: calc(-1 * var(--cnt-padding));
+  top: var(--bl-heigth);
   height: 1px;
   background-color: #7be34a;
   box-shadow: 0px 4px 25px rgba(123, 227, 74, 0.25);
@@ -53,26 +53,31 @@ $cnt-padding: 20px;
 .title-line__2 {
   position: absolute;
   width: 1px;
-  height: $bl-heigth;
-  left: calc($bl-break-point - $cnt-padding);
+  height: var(--bl-heigth);
+  left: calc(var(--bl-break-point) - var(--cnt-padding));
   top: 1px;
   background-color: #7be34a;
   box-shadow: 0px 4px 25px rgba(123, 227, 74, 0.25);
 }
 .title-line__3 {
   position: absolute;
-  left: calc($bl-break-point - $cnt-padding);
+  left: calc(var(--bl-break-point) - var(--cnt-padding));
   top: 0;
-  width: calc($bl-width - $bl-break-point + $cnt-padding * 2);
+  width: calc(var(--bl-width) - var(--bl-break-point));
+  @media screen and (max-width: 479px) {
+    width: calc(
+      var(--bl-width) - var(--bl-break-point) + var(--cnt-padding) * 2
+    );
+  }
   height: 1px;
   background-color: #7be34a;
   box-shadow: 0px 4px 25px rgba(123, 227, 74, 0.25);
 }
 .title-line__4 {
   position: absolute;
-  width: calc($bl-break-point + $bl-row-gap);
-  left: calc(-1 * $cnt-padding);
-  top: calc($bl-heigth + $bl-row-gap);
+  width: calc(var(--bl-break-point) + var(--bl-row-gap));
+  left: calc(-1 * var(--cnt-padding));
+  top: calc(var(--bl-heigth) + var(--bl-row-gap));
   height: 1px;
   background-color: #28780d;
   box-shadow: 0px 4px 25px rgba(40, 120, 13, 0.25);
@@ -80,17 +85,23 @@ $cnt-padding: 20px;
 .title-line__5 {
   position: absolute;
   width: 1px;
-  height: $bl-heigth;
-  left: calc($bl-break-point + $bl-row-gap - $cnt-padding);
-  top: calc(1px + $bl-row-gap);
+  height: var(--bl-heigth);
+  left: calc(var(--bl-break-point) + var(--bl-row-gap) - var(--cnt-padding));
+  top: calc(1px + var(--bl-row-gap));
   background-color: #28780d;
   box-shadow: 0px 4px 25px rgba(40, 120, 13, 0.25);
 }
 .title-line__6 {
   position: absolute;
-  left: calc($bl-break-point + $bl-row-gap - $cnt-padding);
-  top: $bl-row-gap;
-  width: calc($bl-width - $bl-break-point - $bl-row-gap + $cnt-padding * 2);
+  left: calc(var(--bl-break-point) + var(--bl-row-gap) - var(--cnt-padding));
+  top: var(--bl-row-gap);
+  width: calc(var(--bl-width) - var(--bl-break-point) - var(--bl-row-gap));
+  @media screen and (max-width: 479px) {
+    width: calc(
+      var(--bl-width) - var(--bl-break-point) - var(--bl-row-gap) +
+        var(--cnt-padding) * 2
+    );
+  }
   height: 1px;
   background-color: #28780d;
   box-shadow: 0px 4px 25px rgba(40, 120, 13, 0.25);
