@@ -1,0 +1,302 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+@font-face {
+  font-family: "Roboto Regular";
+  src: url("../fonts/roboto-regular/roboto-regular.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/roboto-regular/roboto-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-regular/roboto-regular.otf") format("opentype"), url("../fonts/roboto-regular/roboto-regular.svg") format("svg"), url("../fonts/roboto-regular/roboto-regular.ttf") format("truetype"), url("../fonts/roboto-regular/roboto-regular.woff") format("woff"), url("../fonts/roboto-regular/roboto-regular.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto Medium";
+  src: url("../fonts/roboto-medium/roboto-medium.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/roboto-medium/roboto-medium.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-medium/roboto-medium.otf") format("opentype"), url("../fonts/roboto-medium/roboto-medium.svg") format("svg"), url("../fonts/roboto-medium/roboto-medium.ttf") format("truetype"), url("../fonts/roboto-medium/roboto-medium.woff") format("woff"), url("../fonts/roboto-medium/roboto-medium.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto Bold";
+  src: url("../fonts/roboto-bold/roboto-bold.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/roboto-bold/roboto-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-bold/roboto-bold.otf") format("opentype"), url("../fonts/roboto-bold/roboto-bold.svg") format("svg"), url("../fonts/roboto-bold/roboto-bold.ttf") format("truetype"), url("../fonts/roboto-bold/roboto-bold.woff") format("woff"), url("../fonts/roboto-bold/roboto-bold.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto Condensed";
+  src: url("../fonts/roboto-condensed/roboto-condensed.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/roboto-condensed/roboto-condensed.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-condensed/roboto-condensed.otf") format("opentype"), url("../fonts/roboto-condensed/roboto-condensed.svg") format("svg"), url("../fonts/roboto-condensed/roboto-condensed.ttf") format("truetype"), url("../fonts/roboto-condensed/roboto-condensed.woff") format("woff"), url("../fonts/roboto-condensed/roboto-condensed.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited,
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+:root {
+  --desktop: 1280px;
+  --tablet: 768px;
+  --mobile: 480px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+  font-family: "Roboto Regular";
+  font-weight: 400;
+  font-size: 24px;
+  background-color: #01383A;
+  color: white;
+}
+
+.container {
+  padding: 0 17px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding: 0 40px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container {
+    width: 1280px;
+  }
+}
+
+.instruction .container {
+  outline: 1px solid white;
+}
+
+:root {
+  --bl-width: 100%;
+  --bl-break-point: 192px;
+  --bl-row-gap: 4px;
+  --bl-heigth: 12px;
+  --cnt-padding: 17px;
+}
+
+@media screen and (min-width: 480px) {
+  :root {
+    --bl-width: 480px;
+    --bl-break-point: 192px;
+    --bl-row-gap: 4px;
+    --bl-heigth: 12px;
+  }
+}
+@media screen and (min-width: 768px) {
+  :root {
+    --bl-width: 768px;
+    --bl-break-point: 325px;
+    --bl-row-gap: 8px;
+    --bl-heigth: 16px;
+    --cnt-padding: 40px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  :root {
+    --bl-width: 1280px;
+    --bl-break-point: 473px;
+    --bl-row-gap: 8px;
+    --bl-heigth: 19px;
+  }
+}
+.title-line {
+  max-width: 100%;
+  width: var(--bl-width);
+  height: calc(var(--bl-heigth) + var(--bl-row-gap) + 1px);
+  background-color: #02393b;
+  position: relative;
+}
+
+.title-line__1 {
+  position: absolute;
+  width: var(--bl-break-point);
+  left: calc(-1 * var(--cnt-padding));
+  top: var(--bl-heigth);
+  height: 1px;
+  background-color: #7be34a;
+  box-shadow: 0px 4px 25px rgba(123, 227, 74, 0.25);
+}
+
+.title-line__2 {
+  position: absolute;
+  width: 1px;
+  height: var(--bl-heigth);
+  left: calc(var(--bl-break-point) - var(--cnt-padding));
+  top: 1px;
+  background-color: #7be34a;
+  box-shadow: 0px 4px 25px rgba(123, 227, 74, 0.25);
+}
+
+.title-line__3 {
+  position: absolute;
+  left: calc(var(--bl-break-point) - var(--cnt-padding));
+  top: 0;
+  width: calc(var(--bl-width) - var(--bl-break-point));
+  height: 1px;
+  background-color: #7be34a;
+  box-shadow: 0px 4px 25px rgba(123, 227, 74, 0.25);
+}
+@media screen and (max-width: 479px) {
+  .title-line__3 {
+    width: calc(var(--bl-width) - var(--bl-break-point) + var(--cnt-padding) * 2);
+  }
+}
+
+.title-line__4 {
+  position: absolute;
+  width: calc(var(--bl-break-point) + var(--bl-row-gap));
+  left: calc(-1 * var(--cnt-padding));
+  top: calc(var(--bl-heigth) + var(--bl-row-gap));
+  height: 1px;
+  background-color: #28780d;
+  box-shadow: 0px 4px 25px rgba(40, 120, 13, 0.25);
+}
+
+.title-line__5 {
+  position: absolute;
+  width: 1px;
+  height: var(--bl-heigth);
+  left: calc(var(--bl-break-point) + var(--bl-row-gap) - var(--cnt-padding));
+  top: calc(1px + var(--bl-row-gap));
+  background-color: #28780d;
+  box-shadow: 0px 4px 25px rgba(40, 120, 13, 0.25);
+}
+
+.title-line__6 {
+  position: absolute;
+  left: calc(var(--bl-break-point) + var(--bl-row-gap) - var(--cnt-padding));
+  top: var(--bl-row-gap);
+  width: calc(var(--bl-width) - var(--bl-break-point) - var(--bl-row-gap));
+  height: 1px;
+  background-color: #28780d;
+  box-shadow: 0px 4px 25px rgba(40, 120, 13, 0.25);
+}
+@media screen and (max-width: 479px) {
+  .title-line__6 {
+    width: calc(var(--bl-width) - var(--bl-break-point) - var(--bl-row-gap) + var(--cnt-padding) * 2);
+  }
+}
+
+.hero .test1,
+.hero .test2,
+.hero .test3,
+.hero .test4 {
+  padding: 20px;
+  font-size: 20px;
+}
+.hero .test1 {
+  font-family: "Roboto Regular";
+}
+.hero .test2 {
+  font-family: "Roboto Medium";
+}
+.hero .test3 {
+  font-family: "Roboto Bold";
+}
+.hero .test4 {
+  font-family: "Roboto Condensed";
+}
+
+.take-order {
+  padding: 120px 40px 48px 40px;
+}/*# sourceMappingURL=index.css.map */
