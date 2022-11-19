@@ -1,25 +1,40 @@
 
 .filter{
-    padding-top: 32px;
-    padding-bottom: 40px;
+    padding-top: 40px;
+    padding-bottom: 32px;
+
+    @media screen and (min-width: 768px) {
+        padding-top: 120px;
+        padding-bottom: 72px;
+      }
+    
 
 }
 
 
 .filter__list {
     display: flex;
-    padding-left: 200px;
-    padding-right: 200px;
-    gap: 30px;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+
+
+    @media  screen and (min-width:768px) {
+        justify-content: space-between;
+      }
+
+      @media  screen and (min-width:1280px) {
+        justify-content: center;
+      }  
+
 }
 
 
 
 .filter__btn {
-    padding-top: 16px;
-    padding-bottom: 16px;
-    width: 168px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 124px;
     border-radius: 16px;
     border: 2px solid #86E543;
     background-color: #01383A;
@@ -37,5 +52,17 @@
         box-shadow: 0px 4px 10px rgba(134, 229, 67, 0.1), 0px 4px 20px rgba(134, 229, 67, 0.4);
       }
 
+
+      @media  screen and (min-width:768px) {
+        width: 132px;
+        padding: 16px 0;
+      }
+
+      @media  screen and (min-width:1280px) {
+        width: 168px;
+        padding: 16px 0;
+      }
   
+
+
 }
