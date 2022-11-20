@@ -15,16 +15,18 @@
 .filter__list {
     display: flex;
     flex-wrap: wrap;
-    gap: 40px;
-    justify-content: center;
+    gap: 24px;
+    justify-content: space-around;
 
 
     @media  screen and (min-width:768px) {
         justify-content: space-between;
+        gap: 50px;
       }
 
       @media  screen and (min-width:1280px) {
         justify-content: center;
+        gap: 44px;
       }  
 
 }
@@ -34,11 +36,11 @@
 .filter__btn {
     padding-top: 8px;
     padding-bottom: 8px;
-    width: 124px;
+    width: 134px;
     border-radius: 16px;
     border: 2px solid #86E543;
     background-color: #01383A;
-    font-weight: 700;
+    font-family: 'Roboto Bold';
     font-size: 16px;
     line-height: 1.18;
     color: #86E543;
