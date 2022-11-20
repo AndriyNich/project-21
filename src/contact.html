@@ -11,5 +11,163 @@
     <include src="./partials/header.html"></include>
     <include src="./partials/contacts.html"></include>
     <include src="./partials/footer.html"></include>
+    <section class="contacts">
+      <div class="container contact-container">
+        <h1 class="cont-main-title">Сontacts</h1>
+        <include src="./partials/elements/title_line.html"></include>
+        <picture>
+          <source
+            srcset="
+              ./images/contacts/contacts_img_desctop.jpg    1x,
+              ./images/contacts/contacts_img_desctop_2x.jpg 2x
+            "
+            media="(min-width:1200px)"
+          />
+          <source
+            srcset="
+              ./images/contacts/contacts_img_tablet.jpg    1x,
+              ./images/contacts/contacts_img_tablet_2x.jpg 2x
+            "
+            media="(min-width:768px)"
+          />
+          <source
+            srcset="
+              ./images/contacts/contacts_img_mob.jpg    1x,
+              ./images/contacts/contacts_img_mob_2x.jpg 2x
+            "
+            type="image/jpg"
+            media="(max-width:768px)"
+          />
+          <img
+            class="contacts-images"
+            src="./images/contacts/contacts_img_desctop.jpg"
+            alt=""
+          />
+        </picture>
+        <div class="contacts-bottom">
+          <div class="contacts-wrap">
+            <div>
+              <p class="contact-text">
+                In case of queries about order handling and/or delay, drop us an
+                email at
+              </p>
+              <a class="contact-text" href="">info@shopforgamers.com</a>
+            </div>
+            <address>
+              <ul class="contacts-list">
+                <li class="contacts-item">
+                  <p class="contact-text contact-list-text">Email</p>
+                  <a class="link contacts-mail" href="">sfg.info@gmail.com</a>
+                </li>
+                <li class="contacts-item">
+                  <p class="contact-text contact-list-text">Phone number</p>
+                  <ul class="cont-tel-list">
+                    <li class="cont-tel-item">
+                      <a class="link contacts-tel" href=""
+                        >+38 (093) 643 22 88</a
+                      >
+                    </li>
+                    <li class="cont-tel-item">
+                      <a class="link contacts-tel" href=""
+                        >+38 (050) 345 44 23</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="contacts-form-wrap">
+            <h2 class="contacts-form-title">CONTACT US</h2>
+            <form class="js-speaker-form contacts-form">
+              <div class="cont-form-part">
+                <label class="cont-form-label" for="name"
+                  >Name
+                  <input
+                    class="cont-form-input"
+                    type="text"
+                    name="user-name"
+                    id="name"
+                    pattern="[A-Za-zА-Яа-яЁё]{3,30}"
+                    title="Letters only"
+                  />
+                </label>
+              </div>
+
+              <div class="cont-form-part">
+                <label class="cont-form-label" for="email"
+                  >Email
+                  <input
+                    class="cont-form-input"
+                    type="email"
+                    name="user-email"
+                    id="email"
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                  />
+                </label>
+              </div>
+
+              <div>
+                <label class="cont-label-massage" for="user-message"
+                  >Leave your message</label
+                >
+                <textarea
+                  class="contacts-user-message"
+                  name="user-message"
+                  id="user-message"
+                ></textarea>
+              </div>
+            </form>
+            <button data-modal-open class="cont-form-btn" type="submit">
+              Send
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div data-modal class="cont-modal-backdrop is-hidden">
+      <div class="contacts-modal">
+        <button data-modal-close type="button" class="cont-modal-close-btn">
+          <svg class="" width="40" height="40">
+            <use href=".//images/symbol-defs.svg#close"></use>
+          </svg>
+        </button>
+        <h1 class="cont-modal-title">
+          Thank you <br />
+          for your message! <br />
+          We will contact you soon!
+        </h1>
+        <button
+          class="cont-modal-btn"
+          type="submit"
+          onClick="GoUrl('./index.html')"
+        >
+          Ok
+        </button>
+      </div>
+    </div>
+    <script type="text/javascript">
+      function GoUrl(url) {
+        location.href = url;
+      }
+    </script>
+
+    <script>
+      (() => {
+        const refs = {
+          openModalBtn: document.querySelector('[data-modal-open]'),
+          closeModalBtn: document.querySelector('[data-modal-close]'),
+          modal: document.querySelector('[data-modal]'),
+        };
+
+        refs.openModalBtn.addEventListener('click', toggleModal);
+        refs.closeModalBtn.addEventListener('click', toggleModal);
+
+        function toggleModal() {
+          refs.modal.classList.toggle('is-hidden');
+        }
+      })();
+    </script>
   </body>
 </html>
