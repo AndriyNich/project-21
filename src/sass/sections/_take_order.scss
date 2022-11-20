@@ -1,1 +1,186 @@
-.take-order{}
+.take-order {
+  padding: 40px 16px 32px 16px;
+  @include tablet {
+    padding: 120px 40px 48px 40px;
+  }
+}
+
+.take-order__title,
+.take-order__product {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.17;
+  color: #ffffff;
+
+  @include tablet {
+    font-size: 56px;
+    line-height: 1.18;
+  }
+}
+
+.take-order__title {
+  margin-left: 16px;
+
+  @include tablet {
+    margin-left: 59px;
+  }
+
+  @include desktop {
+    margin-left: 102px;
+  }
+}
+
+.tabl-take-order__product {
+  margin-top: 24px;
+  margin-bottom: 16px;
+
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.19;
+  color: #ffffff;
+
+  @include tablet {
+    display: block;
+    font-size: 56px;
+    line-height: 1.18;
+  }
+
+  @include desktop {
+    display: none;
+  }
+}
+
+.take-order__order {
+  @include tablet {
+    display: flex;
+    gap: 40px;
+    margin-top: 24px;
+  }
+
+  @include desktop {
+    gap: 121px;
+    margin-top: 48px;
+  }
+}
+
+.take-order-order__card {
+    width: 288px;
+    margin: 0 auto;
+  border-radius: 12px;
+
+  @include tablet {
+    width: 387px;
+    margin: 0;
+  }
+}
+
+.take-order__product {
+  display: none;
+
+  @include desktop {
+    display: block;
+    margin-bottom: 32px;
+  }
+}
+
+.take-order__prices {
+  padding-top: 16px;
+
+  @include tablet {
+    padding-top: 69px;
+  }
+
+  @include desktop {
+    padding-top: 0;
+  }
+}
+
+.take-order-prices__list {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+  }
+
+  @include desktop {
+    margin-bottom: 40px;
+    gap: 40px;
+    flex-direction: row;
+    justify-content: flex-start;
+        align-items: center;
+      }
+}
+
+.take-order__old-price {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1;
+  text-decoration-line: line-through;
+  color: #8d9289;
+
+  @include tablet {
+    font-size: 24px;
+  }
+}
+
+.take-order__new-price {
+  text-align: end;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1;
+  color: #86e543;
+
+  @include tablet {
+    text-align: left;
+    font-size: 48px;
+  }
+}
+
+.take-order__variants {
+  display: none;
+
+  @include desktop {
+    display: block;
+  }
+}
+
+.take-order-variants__list {
+  display: flex;
+  gap: 16px;
+
+  @include tablet {
+    gap: 24px;
+  }
+}
+
+.take-order-variants__item {
+  width: calc((100% - 48px) / 4);
+
+  @include tablet {
+    width: calc((100% - 72px) / 4);
+  }
+}
+
+.take-order-variants__card {
+  border-radius: 6px;
+}
+
+.tabl-take-order__variants {
+  margin-top: 16px;
+
+  @include tablet {
+    margin-top: 24px;
+  }
+
+  @include desktop {
+    display: none;
+  }
+}
