@@ -400,12 +400,12 @@ body.modal-open {
   line-height: 1.1667;
 
   @include mobile {
-    margin-bottom: 70px;
+    margin-bottom: 80px;
     font-size: 46px;
   }
 
   @include tablet {
-    margin-bottom: 56px;
+    margin-bottom: 80px;
     font-size: 56px;
     line-height: 1.1786;
   }
