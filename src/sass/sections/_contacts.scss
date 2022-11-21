@@ -360,15 +360,25 @@ body.modal-open {
     transform: translate(-50%, -50%) scale(0.5);
   }
 
+  padding-top: 100px;
+  padding-bottom: 100px;
   width: 272px;
-  height: 395px;
+  // height: 395px;
+
+  @include mobile {
+    padding-top: 88px;
+    padding-bottom: 88px;
+    width: 446px;
+    // height: 480px;
+  }
+
   @include tablet {
     width: 688px;
-    height: 524px;
+    // height: 524px;
   }
   @include desktop {
     width: 768px;
-    height: 524px;
+    // height: 524px;
   }
   background: #01383a;
 }
@@ -381,15 +391,18 @@ body.modal-open {
 }
 
 .cont-modal-title {
-  margin-top: 100px;
   margin-bottom: 32px;
   font-weight: 500;
   font-size: 24px;
   line-height: 1.1667;
 
+  @include mobile {
+    margin-bottom: 70px;
+    font-size: 46px;
+  }
+
   @include tablet {
-    margin-top: 88px;
-    margin-bottom: 80px;
+    margin-bottom: 56px;
     font-size: 56px;
     line-height: 1.1786;
   }
@@ -419,7 +432,7 @@ body.modal-open {
   text-transform: uppercase;
 
   color: #01383a;
-  @include tablet {
+  @include mobile {
     width: 306px;
     height: 70px;
 
