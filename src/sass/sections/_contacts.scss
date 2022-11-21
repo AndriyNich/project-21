@@ -1,372 +1,434 @@
 .cont-main-title {
-    margin-top: 40px;
-    margin-left: 16px;
-    margin-right: 207px;
+  margin-top: 40px;
+  margin-left: 16px;
+  margin-right: 207px;
 
-    @include tablet {
-        margin-top: 120px;
-        margin-left: 59px;
-        margin-right: 443px;
-    }
+  @include tablet {
+    margin-top: 120px;
+    margin-left: 59px;
+    margin-right: 443px;
+  }
 
-    @include desktop {
-        margin-left: 102px;
-        margin-right: 912px;
-    }
+  @include desktop {
+    margin-left: 102px;
+    margin-right: 912px;
+  }
 
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 1.1667;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.1667;
 
-    @include tablet {
+  @include tablet {
     font-size: 56px;
     line-height: 1.1785;
-    }
+  }
 
-    @include desktop {
+  @include desktop {
     font-size: 56px;
     line-height: 1.1785;
-    }
-  
-    color: #FFFFFF;
+  }
+
+  color: #ffffff;
 }
 
 .contacts-images {
-    width: 100%;
-    margin-top: 24px;
+  width: 100%;
+  margin-top: 24px;
 
-    @include tablet {
-        margin-top: 48px;
-        border-radius: 12px;
-    }
+  @include tablet {
+    margin-top: 48px;
+    border-radius: 12px;
+  }
+}
+
+@media screen and (max-width: calc($tablet - 1px)) {
+  .img__wraper--out {
+    position: relative;
+    max-width: 100%;
+    width: $mobile;
+    height: 546px;
+  }
+
+  .img__wraper--in {
+    position: absolute;
+    z-index: 1;
+    max-width: calc(100% + 34px);
+    width: $mobile;
+    left: -17px;
+    top: 0;
+    height: 546px;
+  }
+}
+
+@media screen and (max-width: calc($mobile - 1px)) {
+  .img__wraper--out {
+    height: calc(100vw * 346px / 320px + 24px);
+  }
 }
 
 .contacts-bottom {
-    // padding: 15px;
-    display: flex;
-    gap: 24px;
-    flex-direction: column;
-    margin-top: 16px;
-    @include tablet {
-        gap: 40px;
-        margin-top: 32px;
-    }
-    @include desktop {
-        gap: 122px;
-        margin-top: 59px;
-        flex-direction: row;
-    }
+  // padding: 15px;
+  display: flex;
+  gap: 24px;
+  flex-direction: column;
+  margin-top: 16px;
+  @include tablet {
+    gap: 40px;
+    margin-top: 32px;
+  }
+  @include desktop {
+    gap: 122px;
+    margin-top: 59px;
+    flex-direction: row;
+  }
 }
 
 .contacts-wrap {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    
-    @include tablet {
-        gap: 32px;
-    }
-    
-    @include desktop {
-        gap: 40px;
-    }
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  @include tablet {
+    gap: 32px;
+  }
+
+  @include desktop {
+    gap: 40px;
+  }
 }
 
 .contact-text {
-    font-size: 16px;
-    line-height: 1.1875;
-    @include tablet {
-        font-size: 24px;
-        line-height: 1.1667;
-    }
+  font-size: 16px;
+  line-height: 1.1875;
+  @include tablet {
+    font-size: 24px;
+    line-height: 1.1667;
+  }
 
-    @include desktop {
-        font-size: 24px;
-        line-height: 1.1667;
-    }
-    
-    color: #FFFFFF;
+  @include desktop {
+    font-size: 24px;
+    line-height: 1.1667;
+  }
+
+  color: #ffffff;
+  transition: color 250ms linear;
+
+  &:hover,
+  &:focus {
+    color: #86e543;
+  }
 }
 
 .contact-text:not(:last-child) {
-    margin-bottom: 15px;
-    @include tablet {
+  margin-bottom: 15px;
+  @include tablet {
     margin-bottom: 20px;
-    }
+  }
 }
 
 .contacts-list {
-    display: flex;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  @include tablet {
+    flex-direction: row;
+    gap: 32px;
+  }
+  @include desktop {
     flex-direction: column;
-    gap: 24px;
-    @include tablet {
-        flex-direction: row;
-        gap: 32px;
-    }
-    @include desktop {
-        flex-direction: column;
-        gap: 40px;
-    }
+    gap: 40px;
+  }
 }
 
 .contact-list-text:not(:last-child) {
-    margin-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 .cont-tel-item {
- margin-top: 8px;
+  margin-top: 8px;
 }
 
 .contacts-mail {
-    font-style: normal;
-    font-size: 16px;
-    line-height: 19px;
-    @include tablet {
-        font-size: 24px;
-        line-height: 1.1667;
-    }
-   
-    color: #8D9289;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 19px;
+  @include tablet {
+    font-size: 24px;
+    line-height: 1.1667;
+  }
+
+  color: #8d9289;
+  transition: color 250ms linear;
+
+  &:hover,
+  &:focus {
+    color: #86e543;
+  }
 }
 
 .contacts-tel {
-    font-style: normal;
-    font-size: 16px;
-    line-height: 19px;
-    letter-spacing: 0.01em;
-        
-    @include tablet {
-        font-size: 24px;
-        line-height: 1.1667;
-    }
+  font-style: normal;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.01em;
 
-    color: #8D9289;
+  @include tablet {
+    font-size: 24px;
+    line-height: 1.1667;
+  }
+
+  color: #8d9289;
+  transition: color 250ms linear;
+
+  &:hover,
+  &:focus {
+    color: #86e543;
+  }
 }
 
 .contacts-form-wrap {
-    display: flex;
-    flex-direction: column;
-    @include tablet {
+  display: flex;
+  flex-direction: column;
+  @include tablet {
     margin: 0px 49px;
-    }
-    @include desktop {
-        margin: 0;
-    }
+  }
+  @include desktop {
+    margin: 0;
+  }
 }
 
 .contacts-form {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 
 .contacts-form-title {
-    margin-bottom: 16px;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 1.1667;
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.1667;
 
-    @include tablet {
+  @include tablet {
     margin-bottom: 48px;
     font-size: 36px;
     line-height: 1.1667;
-    }
+  }
 
-    color: #86E543;
+  color: #86e543;
 }
 
 .cont-form-label {
-    font-size: 16px;
-    line-height: 1.25;
-    @include tablet {
+  font-size: 16px;
+  line-height: 1.25;
+  @include tablet {
     font-size: 18px;
     line-height: 1.1111;
-    }
-    
-    color: #FFFFFF;
+  }
+
+  color: #ffffff;
 }
 
 .cont-form-part {
-    width: 100%;
-    @include mobile {
-        width: 450px;
-    }
-    @include tablet {
+  width: 100%;
+  @include mobile {
+    width: 450px;
+  }
+  @include tablet {
     width: 590px;
-    }
-    padding-bottom: 4px;
-    border-bottom: 1px solid #86E543;
+  }
+  padding-bottom: 4px;
+  border-bottom: 1px solid #86e543;
 }
 
 .cont-form-input {
-    margin-left: 20px;
-    background-color: transparent;
-    color: #FFFFFF;
+  margin-left: 20px;
+  background-color: transparent;
+  color: #ffffff;
 }
 
 .cont-label-massage {
-    display: block;
-    margin-bottom: 4px;
-    font-size: 16px;
-    line-height: 1.25;
+  display: block;
+  margin-bottom: 4px;
+  font-size: 16px;
+  line-height: 1.25;
 
-    @include tablet {
-        font-size: 18px;
-        line-height: 1.1111;
-    }
+  @include tablet {
+    font-size: 18px;
+    line-height: 1.1111;
+  }
 
-    color: #CDCDCD;
+  color: #cdcdcd;
 }
 
 .contacts-user-message {
-    resize: none;
-    width: 100%;
-    height: 95px;
+  resize: none;
+  width: 100%;
+  height: 95px;
 
-    @include mobile {
-        width: 450px;
-    }
-    @include tablet {
+  @include mobile {
+    width: 450px;
+  }
+  @include tablet {
     width: 589px;
     height: 120px;
-    }
-    left: 650px;
-    top: 1042px;
+  }
+  left: 650px;
+  top: 1042px;
 
-    background-color: transparent;
-    color: #CDCDCD;
-    border: 1px solid #86E543;
-    border-radius: 0px;
+  background-color: transparent;
+  color: #cdcdcd;
+  border: 1px solid #86e543;
+  border-radius: 0px;
 }
 
 .cont-form-btn {
-    margin-top: 24px;
-    margin-bottom: 48px;
-    width: 173px;
-    height: 51px;
-    margin-left: auto;
-    margin-right: auto;
+  margin-top: 24px;
+  margin-bottom: 48px;
+  width: 173px;
+  height: 51px;
+  margin-left: auto;
+  margin-right: auto;
 
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.1875;
-    @include tablet {
-        width: 306px;
-        height: 70px;
-        margin-top: 34px;
-        margin-bottom: 120px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.1875;
+  @include tablet {
+    width: 306px;
+    height: 70px;
+    margin-top: 34px;
+    margin-bottom: 120px;
 
-        font-size: 32px;
-    }
-    @include desktop {
-        margin-top: 47px;
-        margin-bottom: 120px;
-        margin-left: 0;
-    }
-    
-    text-align: center;
-    text-transform: uppercase;
-    
-    color: #FFFFFF;
-    background-color: transparent;
-    border: 1px solid #FFFFFF;
-    border-radius: 16px;
+    font-size: 32px;
+  }
+  @include desktop {
+    margin-top: 47px;
+    margin-bottom: 120px;
+    margin-left: 0;
+  }
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #ffffff;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  border-radius: 16px;
+
+  transition: filter 250ms linear;
 }
 
 .cont-form-btn:hover,
 .cont-form-btn:focus {
-    box-shadow: drop-shadow(0px 4px 10px rgba(255, 255, 255, 0.1)) drop-shadow(0px 4px 20px rgba(255, 255, 255, 0.4));
+  filter: drop-shadow(0px 4px 10px rgba(255, 255, 255, 0.1))
+    drop-shadow(0px 4px 20px rgba(255, 255, 255, 0.4));
+  //   box-shadow: drop-shadow(0px 4px 10px rgba(255, 255, 255, 0.1))
+  //     drop-shadow(0px 4px 20px rgba(255, 255, 255, 0.4));
+}
+
+.cont-form-btn:active {
+  box-shadow: 0px 4px 10px rgba(134, 229, 67, 0.1),
+    0px 4px 20px rgba(134, 229, 67, 0.4);
+}
+
+body.modal-open {
+  overflow: hidden;
 }
 
 .cont-modal-backdrop {
-    position: fixed;
-    top: 0;
-    left: 0;
-    
-    width: 100%;
-    height: 100%;
-    
-    background-color: rgba(0, 20, 20, 0.8);
-    opacity: 1;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 20, 20, 0.8);
+  opacity: 1;
+  transition: opacity 0.5s linear;
 }
 
 .contacts-modal {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1);
-    
-    width: 272px;
-    height: 395px;
-    @include tablet {
-        width: 688px;
-        height: 524px;
-    }
-    @include desktop {
-        width: 768px;
-        height: 524px;
-    }
-    background: #01383A;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 0.5s linear;
+
+  .cont-modal-backdrop.is-hidden & {
+    transform: translate(-50%, -50%) scale(0.5);
+  }
+
+  width: 272px;
+  height: 395px;
+  @include tablet {
+    width: 688px;
+    height: 524px;
+  }
+  @include desktop {
+    width: 768px;
+    height: 524px;
+  }
+  background: #01383a;
 }
 
 .cont-modal-close-btn {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    background-color: transparent;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: transparent;
 }
 
 .cont-modal-title {
-    margin-top: 100px;
-    margin-bottom: 32px;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 1.1667;
+  margin-top: 100px;
+  margin-bottom: 32px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.1667;
 
-    @include tablet {
-        margin-top: 88px;
-        margin-bottom: 80px;
-        font-size: 56px;
-        line-height: 1.1786;
-    }
-    text-align: center;
-    
-    color: #FFFFFF;
+  @include tablet {
+    margin-top: 88px;
+    margin-bottom: 80px;
+    font-size: 56px;
+    line-height: 1.1786;
+  }
+  text-align: center;
+
+  color: #ffffff;
 }
 
 .cont-modal-btn {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
 
-    width: 173px;
-    height: 51px;
-    
-    background-color: #86E543;
-    border-radius: 16px;
+  width: 173px;
+  height: 51px;
 
-    font-weight: 700;
-    font-size: 16px;
+  background-color: #86e543;
+  border-radius: 16px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.1875;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #01383a;
+  @include tablet {
+    width: 306px;
+    height: 70px;
+
+    font-size: 32px;
     line-height: 1.1875;
-    
-    text-align: center;
-    text-transform: uppercase;
-    
-    color: #01383A;
-    @include tablet {
-        width: 306px;
-        height: 70px;
-
-        font-size: 32px;
-        line-height: 1.1875;
-    }
+  }
 }
 
 .cont-modal-backdrop.is-hidden {
-    opacity: 0;
-    pointer-events: none;
-}
-
-.cont-modal-backdrop.is-hidden .contacts-modal {
-    transform: translate(-50%, -50%) scale(0.5);
+  opacity: 0;
+  pointer-events: none;
 }
