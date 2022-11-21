@@ -1,1 +1,123 @@
-.sale{}
+.sale__top-title {
+    font-family: 'Roboto Medium';
+    font-size: 24px;
+    line-height: 1.16;
+    color: #ffffff;
+    margin-left: 62px;
+
+    @media screen and (min-width: 768px) {
+        font-size: 35px;
+        line-height: 1.17;
+        margin-left: 102px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        font-size: 56px;
+    }
+}
+
+.sale__list {
+    display: flex;
+    gap: 36px;
+    justify-content: center;
+    padding-top: 16px;
+
+    @media screen and (max-width: 767.9px) {
+        flex-direction: column;
+    }
+
+    @media screen and (min-width: 768px) {
+        flex-wrap: wrap;
+        padding-top: 24px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}
+
+.sale__item {
+    @media screen and (min-width: 768px) {
+        margin-bottom: 6px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        width: calc((100% - 60px) / 4);
+        margin-bottom: 24px;
+    }
+}
+
+.sale-wrap__img {
+    border-radius: 12px;
+
+    @media screen and (max-width: 768px) {
+        width: 100%;
+    }
+}
+
+.sale__title {
+    font-family: 'Roboto Medium';
+    font-size: 22px;
+    line-height: 1.18;
+    color: #86e543;
+    padding: 8px 0;
+}
+
+.sale-box__price {
+    display: flex;
+    gap: 80px;
+    align-items: center;
+}
+
+.sale-old__price {
+    font-family: 'Roboto Medium';
+    font-size: 14px;
+    line-height: 1;
+    color: #8d9289;
+    text-decoration: line-through;
+}
+
+.sale-new__price {
+    font-family: 'Roboto Medium';
+    font-size: 20px;
+    line-height: 1;
+    color: #86e543;
+}
+
+.sale-btn {
+    display: flex;
+    justify-content: center;
+    padding: 24px 0 48px 0;
+
+    @media screen and (min-width: 768px) {
+        padding: 28px 0 120px 0;
+    }
+
+    @media screen and (min-width: 1280px) {
+        padding: 24px 0 120px 0;
+    }
+}
+
+.sale-btn__wrap {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: right;
+    color: #01383A;
+    padding: 16px 48px;
+    background: #FFFFFF;
+    border-radius: 16px;
+
+    @media screen and (min-width: 768px) {
+        font-size: 28px;
+    }
+}
+
+.sale-content {
+    display: none;
+
+    @media screen and (min-width: 768px) {
+        display: block;
+    }
+}
