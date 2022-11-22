@@ -1,5 +1,9 @@
 .hero__wraper {
   background-color: #01383a;
+
+  @include tablet {
+    margin-bottom: 120px;
+  }
 }
 
 .hero {
@@ -22,7 +26,6 @@
     background-image: url('./../images/hero/hero-mob-2x.png');
   }
 
-  // opacity: 0.75;
   @include mobile {
     padding-top: 180px;
     padding-left: 37px;

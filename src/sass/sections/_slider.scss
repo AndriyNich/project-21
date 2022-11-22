@@ -85,9 +85,41 @@
   width: 16px;
   height: 16px;
   background-color: #ffffff;
-  border-radius: 50%;
+  border-radius: 8px;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  animation-name: slider-anime;
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:nth-child(1) {
+    animation-delay: 0;
+  }
+  &:nth-child(2) {
+    animation-delay: 0.5s;
+  }
+  &:nth-child(3) {
+    animation-delay: 1.5s;
+  }
 }
+
 .current-dot {
   width: 40px;
   border-radius: 30px;
+}
+
+@keyframes slider-anime {
+  0% {
+    background-color: #fff;
+  }
+  20% {
+    background-color: #86e543;
+  }
+  40% {
+    background-color: #fff;
+  }
+  100% {
+    background-color: #fff;
+  }
 }
