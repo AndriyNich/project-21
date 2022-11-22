@@ -87,11 +87,12 @@
   width: 247px;
   flex-direction: column;
   gap: 94px;
-  align-items: flex-start;
+  align-items: center;
 
   @include tablet {
     margin: 0 0;
     width: 338px;
+    align-items: flex-start;
   }
 
   @include desktop {
