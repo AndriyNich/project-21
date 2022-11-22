@@ -1,9 +1,15 @@
 .swiper-slide {
+  display: none;
   position: relative;
   & img {
     width: 100%;
   }
 }
+
+.swiper-slide--active {
+  display: block;
+}
+
 .slider-title {
   position: absolute;
   max-width: 596px;
@@ -90,7 +96,7 @@
   animation-iteration-count: infinite;
   animation-name: slider-anime;
 
-&:hover {
+  &:hover {
     cursor: pointer;
   }
 
@@ -119,7 +125,7 @@
     background-color: #fff;
   }
 }
-.current-dot {
+.dots-item--active {
   width: 40px;
 }
 

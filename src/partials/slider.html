@@ -1,67 +1,102 @@
 <section class="swiper-container">
-  <ul class="swiper-list">
-    <li class="swiper-slide">
-      <picture>
-        <source
-          srcset="
-            ./images/slider/slide-1.jpg   1x,
-            ./images/slider/slide1-2x.jpg 2x
-          "
-          media="(min-width:1280px)"
-        />
-        <source
-          srcset="
-            ./images/slider/slide-1-tablet.jpg    1x,
-            ./images/slider/slide-1-tablet-2x.jpg 2x
-          "
-          media="(min-width:768px)"
-        />
-        <source
-          srcset="
-            ./images/slider/slide-1-mob.jpg    1x,
-            ./images/slider/slide-1-mob-2x.jpg 2x
-          "
-          media="(max-width:768px)"
-        />
-        <img src="./images/slider/slide-1.jpg" alt="" class="slider-img" />
-      </picture>
+  <h2 class="visually-hidden">Main slaider</h2>
+  <div id="tabs-1">
+    <div class="swiper-list" data-panes>
+      <div class="swiper-slide" id="pan1">
+        <picture>
+          <source
+            srcset="
+              ./images/slider/slide-1.jpg   1x,
+              ./images/slider/slide1-2x.jpg 2x
+            "
+            media="(min-width:1280px)"
+          />
+          <source
+            srcset="
+              ./images/slider/slide-1-tablet.jpg    1x,
+              ./images/slider/slide-1-tablet-2x.jpg 2x
+            "
+            media="(min-width:768px)"
+          />
+          <source
+            srcset="
+              ./images/slider/slide-1-mob.jpg    1x,
+              ./images/slider/slide-1-mob-2x.jpg 2x
+            "
+            media="(max-width:768px)"
+          />
+          <img src="./images/slider/slide-1.jpg" alt="" class="slider-img" />
+        </picture>
 
-      <p class="slider-title slide-1">
-        <span> One place</span> for everything you want
-      </p>
-    </li>
-    <!-- <li class="swiper-slide">
-      <picture>
-        <source
-          srcset="
-            ./images/slider/slide-2.jpg    1x,
-            ./images/slider/slide-2-2x.jpg 2x
-          "
-        />
-        <img src="./images/slider/slide-2.jpg" alt="" class="slider-img" />
-      </picture>
-      <p class="slider-title slide-2">
-        Best shop for buying <span>gaming products</span>
-      </p>
-    </li>
-    <li class="swiper-slide">
-      <picture>
-        <source
-          srcset="
-            ./images/slider/slide-3.jpg    1x,
-            ./images/slider/slide-3-2x.jpg 2x
-          "
-        />
-        <img src="./images/slider/slide-1.jpg" alt="" class="slider-img" />
-      </picture>
-      <p class="slider-title slide-3">High-quality products <br>in lowest price</br></p>
-    </li> -->
-  </ul>
-  <div class="dots">
-    <ul class="dots-list">
-      <li class="dots-item current-dot"></li>
-      <li class="dots-item"></li>
-      <li class="dots-item"></li>
-    </ul>
+        <p class="slider-title slide-1">
+          <span> One place</span> for everything you want
+        </p>
+      </div>
+      <div class="swiper-slide" id="pan2">
+        <picture>
+          <source
+            srcset="
+              ./images/slider/slide-2.jpg    1x,
+              ./images/slider/slide-2-2x.jpg 2x
+            "
+            media="(min-width:1280px)"
+          />
+          <source
+            srcset="
+              ./images/slider/slide-2-tablet.jpg    1x,
+              ./images/slider/slide-2-tablet-2x.jpg 2x
+            "
+            media="(min-width:768px)"
+          />
+          <source
+            srcset="
+              ./images/slider/slide-2-mob.jpg    1x,
+              ./images/slider/slide-2-mob-2x.jpg 2x
+            "
+            media="(max-width:768px)"
+          />
+          <img src="./images/slider/slide-2.jpg" alt="" class="slider-img" />
+        </picture>
+        <p class="slider-title slide-2">
+          Best shop for buying <span>gaming products</span>
+        </p>
+      </div>
+      <div class="swiper-slide" id="pan3">
+        <picture>
+          <source
+            srcset="
+              ./images/slider/slide-3.jpg    1x,
+              ./images/slider/slide-3-2x.jpg 2x
+            "
+            media="(min-width:1280px)"
+          />
+          <source
+            srcset="
+              ./images/slider/slide-3-tablet.jpg    1x,
+              ./images/slider/slide-3-tablet-2x.jpg 2x
+            "
+            media="(min-width:768px)"
+          />
+          <source
+            srcset="
+              ./images/slider/slide-3-mob.jpg    1x,
+              ./images/slider/slide-3-mob-2x.jpg 2x
+            "
+            media="(max-width:768px)"
+          />
+          <img src="./images/slider/slide-3.jpg" alt="" class="slider-img" />
+        </picture>
+        <p class="slider-title slide-3">
+          High-quality products <br />in lowest price<br />
+        </p>
+      </div>
+    </div>
+    <div class="dots">
+      <div class="dots-list" data-controls>
+        <a href="#pan1" class="dots-item"> </a>
+        <a href="#pan2" class="dots-item"> </a>
+        <a href="#pan3" class="dots-item"> </a>
+      </div>
+    </div>
   </div>
 </section>
