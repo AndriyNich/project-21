@@ -1,0 +1,2 @@
+!function(){"use strict";!function(){var o={openModalBtn2:document.querySelector("[data-modal-open-contact2]"),closeModalBtn2:document.querySelector("[data-modal-close-contact2]"),modal2:document.querySelector("[data-modal-contact2]")};function t(){o.modal2.classList.toggle("is-hidden"),document.body.classList.toggle("modal-open")}o.openModalBtn2.addEventListener("click",t),o.closeModalBtn2.addEventListener("click",t)}()}();
+//# sourceMappingURL=take_order.2032dab1.js.map
