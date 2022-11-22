@@ -2,9 +2,9 @@
 
 (() => {
   const refs2 = {
-    openModalBtn2: document.querySelector('[contact2-data-modal-open]'),
-    closeModalBtn2: document.querySelector('[contact2-data-modal-close]'),
-    modal2: document.querySelector('[contact2-data-modal]'),
+    openModalBtn2: document.querySelector('[data-modal-open-contact2]'),
+    closeModalBtn2: document.querySelector('[data-modal-close-contact2]'),
+    modal2: document.querySelector('[data-modal-contact2]'),
   };
   refs2.openModalBtn2.addEventListener('click', toggleModal2);
   refs2.closeModalBtn2.addEventListener('click', toggleModal2);
