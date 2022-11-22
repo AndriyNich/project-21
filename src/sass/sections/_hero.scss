@@ -1,24 +1,125 @@
 .hero {
-  .test1,
-  .test2,
-  .test3,
-  .test4 {
-    padding: 20px;
-    font-size: 20px;
-  }
+  padding-top: 180px;
+  padding-bottom: 102px;
+  background-image: 
+    url('/src/images/hero/Frame-mob.png'),
+    url('/src/images/hero/hero-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: top -40px right -20px, right bottom;
 
-  .test1 {
-    font-family: 'Roboto Regular';
-  }
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+        background-image:
+        url('/src/images/hero/Frame-mob-2x.png'),
+        url("/src/images/hero/hero_bg-2x.jpg");
+      }
+    
+      @media screen and(min-width:768px) {
+          padding-top: 154px;
+          padding-bottom: 208px;
+        background-image:
+        url('/src/images/hero/Frame-tab.png'),
+          url("/src/images/hero/hero-bg.jpg");
+          background-position: right, center bottom;
+    
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+          background-image:
+            url('/src/images/hero/Frame-tab-2x.png'),
+            url("/src/images/hero/hero_bg-2x.jpg");
+        }
+      }
+    
+      @media screen and (min-width: 1200px) {
+        padding-top: 180px;
+        padding-bottom: 209px;
+        background-image:
+            url('/src/images/hero/Frame-desk.png'), 
+            url("/src/images/hero/hero-bg.jpg");
+            background-position: right, center bottom;
+            
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+          background-image:
+              url('/src/images/hero/Frame-desk-2x.png'), 
+              url("/src/images/hero/hero_bg-2x.jpg");
+        }
+      }
+ 
+}
 
-  .test2 {
-    font-family: 'Roboto Medium';
-  }
 
-  .test3 {
-    font-family: 'Roboto Bold';
+.hero_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media screen and(min-width:768px){
+    flex-wrap: wrap;
+    flex-direction: row;
+    
   }
-  .test4 {
-    font-family: 'Roboto Condensed';
+    @media screen and(min-width:1200px) {
+      align-items: flex-start;
+      flex-direction: column;
+  
+    }
+}
+
+.hero-title {
+  width: 247px;
+  padding-bottom: 25px;
+  font-family: 'Roboto Medium';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.19;
+  text-align: center;
+  white-space: pre-line;
+  color: #ffffff;
+  @media screen and(min-width:768px){
+  text-align: start;
+  width: 388px;
+  font-size: 56px;
+  line-height: 1.18;
+  padding-bottom: 94px;
   }
+    @media screen and(min-width:1200px) {
+      text-align: start;
+      white-space: normal;
+      width: 515px;
+      font-size: 64px;
+      line-height: 1.17;
+      padding-bottom: 40px;
+    }
+}
+
+.hero-btn {
+  font-family: 'Roboto Bold';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.19;
+  // text-align: right;
+  text-transform: uppercase;
+  color: #01383a;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 20px;
+  cursor: pointer;
+  background: #86e543;
+  border-radius: 16px;
+  @media screen and(min-width:768px) {
+    
+    font-size: 32px;
+    line-height: 1.19
+  }
+    @media screen and(min-width:1200px) {
+      font-size: 32px;
+      line-height: 1.19
+    }
 }
