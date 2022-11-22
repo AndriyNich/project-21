@@ -1,38 +1,15 @@
+
 .hero {
+  width: 100%;
   padding-top: 180px;
-  padding-bottom: 102px;
-  // mix-blend-mode: hard-light;
-    opacity: 0.6;
-    filter: drop-shadow(0px 3.06266px 19.1416px #5EEC36);
+  padding-bottom: 127px;
+  
+  opacity: 0.75;
   background-image: 
     url('/src/images/hero/Frame-mob.png'), 
     url('/src/images/hero/hero-bg.jpg');
-    background-repeat: no-repeat;
-    background-position: top -40px right -20px, right bottom;
 
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url('/src/images/hero/Frame-mob-2x.png'),
-      url('/src/images/hero/hero_bg-2x.jpg');
-  }
-
-  @media screen and(min-width:768px) {
-    padding-top: 154px;
-    padding-bottom: 208px;
-    background-image: url('/src/images/hero/Frame-tab.png'),
-      url('/src/images/hero/hero-bg.jpg');
-    background-position: right, center bottom;
-
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url('/src/images/hero/Frame-tab-2x.png'),
-        url('/src/images/hero/hero_bg-2x.jpg');
-    }
-  }
-
-  @media screen and (min-width: 1280px) {
+@media screen and (min-width: 1280px) {
     padding-top: 180px;
     padding-bottom: 209px;
     background-image: url('/src/images/hero/Frame-desk.png'),
