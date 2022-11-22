@@ -85,7 +85,6 @@
 .accessories__item {
   @media screen and (min-width: 768px) {
     margin-bottom: 6px;
-
   }
 
   @media screen and (min-width: 1280px) {
@@ -98,12 +97,7 @@
   @media screen and (max-width: 767.9px) {
     display: none;
   }
-
 }
-
-
-
-
 
 .accessories-box {
   position: absolute;
@@ -137,7 +131,6 @@
 }
 
 .accessories__link {
-
   &:focus .accessories-wrap,
   &:hover .accessories-wrap {
     box-shadow: 0px 4px 10px rgba(134, 229, 67, 0.1),
@@ -162,23 +155,67 @@
 
 .accessories-control__btn {
   display: block;
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  background-color: #ffffff;
+  // width: 16px;
+  // height: 16px;
+  // border-radius: 8px;
+  // background-color: #ffffff;
 }
-
 
 .accessories-control__list .control-active {
   width: 40px;
-  border-radius: 30px;
-
 }
 
 .accessories-control__list .accessories--non-visible {
-
   @media screen and (min-width: 1280px) {
     display: none;
   }
+}
 
+.accessories-control__item {
+  width: 16px;
+  height: 16px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  animation-name: access-anime;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:nth-child(1) {
+    animation-delay: 0;
+    width: 40px;
+  }
+
+  &:nth-child(2) {
+    animation-delay: 0.5s;
+  }
+
+  &:nth-child(3) {
+    animation-delay: 1s;
+  }
+
+  &:nth-child(4) {
+    animation-delay: 1.5s;
+  }
+  &:nth-child(5) {
+    animation-delay: 2s;
+  }
+}
+
+@keyframes access-anime {
+  0% {
+    background-color: #fff;
+  }
+  20% {
+    background-color: #86e543;
+  }
+  40% {
+    background-color: #fff;
+  }
+  100% {
+    background-color: #fff;
+  }
 }
