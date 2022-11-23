@@ -1,22 +1,15 @@
 .swiper-slide {
   display: none;
   position: relative;
+  width: 100%;
 }
-#tabs-1,
-#tabs-2,
-#tabs-3 {
-  @media screen and (max-width: 768px) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-}
+
 .swiper-slide--active {
   display: block;
 }
 
-.swiper-slide {
-  // margin: 0 auto;
+.swiper-slide img {
+  width: 100%;
 }
 .slider-title {
   position: absolute;
@@ -42,20 +35,26 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+
   @media screen and (max-width: 768px) {
-    margin: 404px 40px 38px 24px;
+    margin: 125.85vw 12.46vw 11.83vw 7.47vw;
     font-weight: 500;
     font-size: 24px;
     line-height: 28px;
   }
+  @media screen and (min-width: 480px) {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 1.35;
+  }
   @media screen and (min-width: 768px) {
-    margin: 352px 208px 14px 41px;
+    margin: 45.83vw 27.08vw 1.82vw 5.33vw;
     font-weight: 500;
     font-size: 56px;
     line-height: 66px;
   }
   @media screen and (min-width: 1280px) {
-    margin: 326px 329px 49px 345px;
+    margin: 25.4% 26.48% 3.82% 26.95%;
     font-weight: 600;
     font-size: 56px;
     line-height: 1.35;
@@ -75,19 +74,24 @@
     text-transform: uppercase;
   }
   @media screen and (max-width: 768px) {
-    margin: 404px 68px 38px 24px;
+    margin: 125.85vw 21.18vw 11.83vw 7.47vw;
     font-weight: 500;
     font-size: 24px;
     line-height: 28px;
   }
+  @media screen and (min-width: 480px) {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 1.35;
+  }
   @media screen and (min-width: 768px) {
-    margin: 352px 201px 14px 41px;
+    margin: 45.83vw 26.17vw 1.82vw 5.33vw;
     font-weight: 500;
     font-size: 56px;
     line-height: 66px;
   }
   @media screen and (min-width: 1280px) {
-    margin: 326px 701px 49px 49px;
+    margin: 25.4vw 54.76vw 3.82vw 3.82vw;
     font-weight: 600;
     font-size: 56px;
     line-height: 1.35;
@@ -104,19 +108,24 @@
   -webkit-text-fill-color: transparent;
   background-clip: text;
   @media screen and (max-width: 768px) {
-    margin: 404px 63px 38px 24px;
+    margin: 125.85vw 19.62vw 11.83vw 7.47vw;
     font-weight: 500;
     font-size: 24px;
     line-height: 28px;
   }
+  @media screen and (min-width: 480px) {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 1.35;
+  }
   @media screen and (min-width: 768px) {
-    margin: 352px 176px 14px 41px;
+    margin: 45.83vw 22.9vw 1.82vw 5.33vw;
     font-weight: 500;
     font-size: 56px;
     line-height: 66px;
   }
   @media screen and (min-width: 1280px) {
-    margin: 326px 674px 49px 49px;
+    margin: 25.46vw 52.65vw 3.82vw 3.82vw;
     font-weight: 600;
     font-size: 56px;
     line-height: 1.35;
