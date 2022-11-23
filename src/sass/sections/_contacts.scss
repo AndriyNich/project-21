@@ -1,29 +1,22 @@
 .cont-main-title {
   margin-top: 40px;
   margin-left: 16px;
-  margin-right: 207px;
-
-  @include tablet {
-    margin-top: 120px;
-    margin-left: 59px;
-    margin-right: 443px;
-  }
-
-  @include desktop {
-    margin-left: 102px;
-    margin-right: 912px;
-  }
-
+  // margin-right: 207px;
   font-weight: 500;
   font-size: 24px;
   line-height: 1.1667;
 
   @include tablet {
+    margin-top: 120px;
+    margin-left: 59px;
     font-size: 56px;
     line-height: 1.1785;
+    // margin-right: 443px;
   }
 
   @include desktop {
+    margin-left: 120px;
+    // margin-right: 912px;
     font-size: 56px;
     line-height: 1.1785;
   }

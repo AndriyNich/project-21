@@ -1,7 +1,7 @@
 .contact-us {
   .contact-us-container {
     // width: 100%;
-    margin: 0;
+    margin: 0 auto;
     padding: 32px 16px 48px 16px;
 
     @media screen and (min-width: 480px) {
@@ -53,7 +53,7 @@
     background-color: #86e543;
     color: #01383a;
     cursor: pointer;
-    transition: 250ms linear;
+    transition: box-shadow 250ms linear;
 
     @media screen and (min-width: 768px) {
       font-size: 32px;

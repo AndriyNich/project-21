@@ -73,25 +73,23 @@
     }
   }
 
-  .img2--second {
-    @media screen and (max-width: calc($tablet - 1px)) {
-      margin-bottom: 8px;
-    }
-  }
-
   .img2 {
     padding: 0 auto;
 
-    &--Second {
+    &--second {
       display: block;
+      @media screen and (max-width: calc($tablet - 1px)) {
+        margin-left: -17px;
+        margin-right: -17px;
+        margin-bottom: 8px;
+      }
     }
 
     @media screen and (min-width: 480px) {
       &--second {
         display: block;
         width: 480px;
-        height: 228px;
-        width: 100%;
+        // height: 228px;
         height: auto;
       }
     }
