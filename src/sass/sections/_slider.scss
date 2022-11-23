@@ -1,30 +1,37 @@
 .swiper-slide {
   display: none;
   position: relative;
-  & img {
-    width: 100%;
+}
+#tabs-1,
+#tabs-2,
+#tabs-3 {
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
-
 .swiper-slide--active {
   display: block;
 }
 
+.swiper-slide {
+  // margin: 0 auto;
+}
 .slider-title {
   position: absolute;
+  top: 0;
   max-width: 596px;
   font-weight: 600;
   font-size: 56px;
   line-height: 1.35;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     & span {
       display: block;
     }
   }
 }
 .slide-1 {
-  left: 345px;
-  top: 326px;
   line-height: 1.18;
   background: linear-gradient(
     270deg,
@@ -35,24 +42,26 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  @media screen and (max-width: 1280px) {
-    left: 41px;
-    top: 352px;
-    font-weight: 500;
-    font-size: 56px;
-    line-height: 66px;
-  }
   @media screen and (max-width: 768px) {
-    left: 24px;
-    top: 81.12%;
+    margin: 404px 40px 38px 24px;
     font-weight: 500;
     font-size: 24px;
     line-height: 28px;
   }
+  @media screen and (min-width: 768px) {
+    margin: 352px 208px 14px 41px;
+    font-weight: 500;
+    font-size: 56px;
+    line-height: 66px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin: 326px 329px 49px 345px;
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 1.35;
+  }
 }
 .slide-2 {
-  left: 49px;
-  top: 296px;
   background: linear-gradient(
     270deg,
     #03fe8f 4.61%,
@@ -65,11 +74,26 @@
   span {
     text-transform: uppercase;
   }
+  @media screen and (max-width: 768px) {
+    margin: 404px 68px 38px 24px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+  }
+  @media screen and (min-width: 768px) {
+    margin: 352px 201px 14px 41px;
+    font-weight: 500;
+    font-size: 56px;
+    line-height: 66px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin: 326px 701px 49px 49px;
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 1.35;
+  }
 }
 .slide-3 {
-  left: 56px;
-  top: 214px;
-  max-width: 450px;
   background: linear-gradient(
     270deg,
     #ffffff 13.26%,
@@ -79,6 +103,24 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  @media screen and (max-width: 768px) {
+    margin: 404px 63px 38px 24px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+  }
+  @media screen and (min-width: 768px) {
+    margin: 352px 176px 14px 41px;
+    font-weight: 500;
+    font-size: 56px;
+    line-height: 66px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin: 326px 674px 49px 49px;
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 1.35;
+  }
 }
 .dots-list {
   margin-top: 23px;
