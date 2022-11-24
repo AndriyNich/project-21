@@ -158,6 +158,13 @@
     // display: none;
     left: 0;
     bottom: -22px;
+
+    @include tablet {
+      &.drop-box--last {
+        bottom: -62px;
+      }
+    }
+
     width: 100%;
     z-index: 200;
     background-color: #01383a;
