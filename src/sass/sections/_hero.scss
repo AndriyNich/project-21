@@ -10,64 +10,15 @@
   margin: 0 auto;
 
   background-repeat: no-repeat;
-  background-size: contain;
-  padding-top: 180px;
-  padding-left: 37px;
-  padding-right: 37px;
   width: 100%;
   height: 600px;
-  background-position: 0 -104px;
+  background-position: 50% -104px;
   background-size: 100% calc(100vw * 601px / 320px);
   background-image: url('./../images/hero/hero-mob-1x.png');
 
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url('./../images/hero/hero-mob-2x.png');
-  }
-
-  @include mobile {
-    padding-top: 180px;
-    padding-left: 37px;
-    width: $mobile;
-    height: 600px;
-    background-position: 0 center;
-    background-size: $mobile 901px;
-    background-image: url('./../images/hero/hero-mob-1x.png');
-
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url('./../images/hero/hero-mob-2x.png');
-    }
-  }
-  @include tablet {
-    padding-top: 154px;
-    padding-left: 40px;
-    width: $tablet;
+  @media screen and (min-width: 1100px) {
     height: 724px;
-    background-position: 0 -136px;
-    background-size: $tablet 860px;
-    background-image: url('./../images/hero/hero-tab-1x.png');
-
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url('./../images/hero/hero-tab-2x.png');
-    }
-  }
-
-  @include desktop {
-    // opacity: 0.25;
-    // mix-blend-mode: hard-light;
-    // mix-blend-mode: luminosity;
-    // filter: drop-shadow(0px 4px 25px #5eec36);
-
-    padding-top: 180px;
-    padding-left: 142px;
-    width: $desktop;
-    height: 724px;
-    background-position: 0 -136px;
+    background-position: center -136px;
     background-size: $desktop 860px;
     background-image: url('./../images/hero/hero-desk-1x.png');
 
@@ -77,9 +28,74 @@
       background-image: url('./../images/hero/hero-desk-2x.png');
     }
   }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('./../images/hero/hero-mob-2x.png');
+  }
+
+  @media screen and (max-width: 1099px) {
+    height: 724px;
+    background-position: right -136px;
+    background-size: $desktop 860px;
+    background-image: url('./../images/hero/hero-desk-1x.png');
+    // background-image: url('./../images/hero/hero-tab-1x.png');
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('./../images/hero/hero-desk-2x.png');
+      // background-image: url('./../images/hero/hero-tab-2x.png');
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    height: 724px;
+    background-position: right -136px;
+    background-size: $tablet 860px;
+    background-image: url('./../images/hero/hero-tab-1x.png');
+    // background-image: url('./../images/hero/hero-tab-1x.png');
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('./../images/hero/hero-tab-2x.png');
+      // background-image: url('./../images/hero/hero-tab-2x.png');
+    }
+  }
+
+  @media screen and (max-width: calc($mobile - 1px)) {
+    height: 600px;
+    background-position: right -160px;
+    background-size: $tablet 860px;
+    background-image: url('./../images/hero/hero-tab-1x.png');
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('./../images/hero/hero-tab-2x.png');
+    }
+  }
 }
 
-.hero_container {
+.hero .container {
+  padding-top: 180px;
+  padding-left: 37px;
+  padding-right: 37px;
+
+  @include mobile {
+    padding-top: 154px;
+    padding-left: 40px;
+  }
+
+  @include desktop {
+    padding-top: 180px;
+    padding-left: 142px;
+  }
+}
+
+.hero__container {
   // padding: 0 37px;
   margin: 0 auto;
 
@@ -89,7 +105,7 @@
   gap: 94px;
   align-items: center;
 
-  @include tablet {
+  @include mobile {
     margin: 0 0;
     width: 338px;
     align-items: flex-start;
@@ -111,7 +127,7 @@
   // white-space: pre-line;
   color: #ffffff;
 
-  @include tablet {
+  @include mobile {
     width: 247px;
     text-align: start;
     width: 388px;
