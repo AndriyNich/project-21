@@ -130,6 +130,29 @@
     }
   }
 
+  .online-input-wrap:focus-within
+    .online-input:not(:placeholder-shown):required:invalid
+    + .online-input-invalid,
+  .online-input-wrap
+    .online-input:not(:placeholder-shown):required:invalid
+    + .online-input-invalid {
+    display: block;
+  }
+
+  .online-input-invalid {
+    display: none;
+    position: absolute;
+    left: 60px;
+    top: 5px;
+    width: 16px;
+    height: 16px;
+    background-image: url('./../images/invalid.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: '';
+    z-index: 20;
+  }
+
   .online-area-wrap {
     width: 100%;
     position: relative;
@@ -156,6 +179,7 @@
   }
 
   .online-input {
+    position: relative;
     width: 270px;
     height: 24px;
     margin-bottom: 40px;

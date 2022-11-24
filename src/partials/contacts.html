@@ -87,8 +87,11 @@
                   name="user-name"
                   id="name"
                   title="Letters only"
+                  pattern="[A-Za-zА-Яа-яЁё]{3,30}"
+                  placeholder="Joe Bloggs"
+                  required
                 />
-                <!-- pattern="[A-Za-zА-Яа-яЁё]{3,30}" -->
+                <span class="cont-form-invalid"></span>
               </label>
             </div>
 
@@ -100,8 +103,11 @@
                   type="email"
                   name="user-email"
                   id="email"
+                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                  placeholder="name@site.domen"
+                  required
                 />
-                <!-- pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" -->
+                <span class="cont-form-invalid"></span>
               </label>
             </div>
 
@@ -115,10 +121,10 @@
                 id="user-message"
               ></textarea>
             </div>
+            <button data-modal-open-contact class="cont-form-btn" type="button">
+              Send
+            </button>
           </form>
-          <button data-modal-open-contact class="cont-form-btn" type="submit">
-            Send
-          </button>
         </div>
       </div>
     </div>

@@ -11,20 +11,24 @@
             class="online-input online-item"
             name="online-name"
             id="online-name"
-            placeholder=" "
+            pattern="[A-Za-zА-Яа-яЁё]{3,30}"
+            placeholder="Joe Bloggs"
             required
           />
+          <span class="online-input-invalid"></span>
         </div>
         <div class="online-input-wrap">
           <label for="online-email" class="online-label">Email</label>
           <input
-            type="text"
+            type="email"
             class="online-input online-item"
             name="online-email"
             id="online-email"
-            placeholder=" "
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+            placeholder="name@site.domen"
             required
           />
+          <span class="online-input-invalid"></span>
         </div>
 
         <div class="online-input-wrap">
